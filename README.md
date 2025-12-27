@@ -1,192 +1,77 @@
-# Google People Also Ask Scraper
-> This tool collects the expanding chain of “People Also Ask” questions that appear in Google search results. It helps you uncover hidden user intent, expand keyword research, and map out deeper content opportunities with ease.
-> By automating Google’s PAA exploration, it delivers structured, ready-to-use question datasets.
+# 🎉 google-people-also-ask-scraper - Easily Scrape Google's 'People Also Ask' Questions
 
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Shawnte519/google-people-also-ask-scraper/releases)
 
-<p align="center">
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/scraper.png" alt="Bitbash Banner" width="100%"></a>
-</p>
-<p align="center">
-  <a href="https://t.me/Bitbash333" target="_blank">
-    <img src="https://img.shields.io/badge/Chat%20on-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>&nbsp;
-  <a href="https://wa.me/923249868488?text=Hi%20BitBash%2C%20I'm%20interested%20in%20automation." target="_blank">
-    <img src="https://img.shields.io/badge/Chat-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>&nbsp;
-  <a href="mailto:sale@bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Email-sale@bitbash.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>&nbsp;
-  <a href="https://bitbash.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-Website-007BFF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
-  </a>
-</p>
+## 🚀 Getting Started
 
+Welcome to the google-people-also-ask-scraper! This tool helps you gather insights from Google's 'People Also Ask' section. You don't need any technical knowledge to use it. Just follow the simple steps below.
 
+## 🔍 What is This Tool?
 
+The google-people-also-ask-scraper extracts questions related to your keywords from Google’s search results. This information can support your SEO research, keyword analysis, and content strategy. 
 
-<p align="center" style="font-weight:600; margin-top:8px; margin-bottom:8px;">
-  Created by Bitbash, built to showcase our approach to Scraping and Automation!<br>
-  If you are looking for <strong>Google People Also Ask Scraper</strong> you've just found your team — Let’s Chat. 👆👆
-</p>
+## 📋 Features
 
+- **User-Friendly Interface:** Easily navigate the tool without complex settings.
+- **Quick Results:** Get answers in seconds with minimal effort.
+- **Keyword Analysis:** Discover popular queries people ask regarding a specific topic.
+- **SEO Support:** Leverage the scraped data to enhance your website's search engine visibility.
 
-## Introduction
-This project retrieves the related questions that Google shows under the People Also Ask section for any keyword. It solves the hassle of manually expanding questions one by one and keeps the exploration depth fully in your control.
-It’s built for researchers, SEO teams, data analysts, and anyone looking to extract meaningful search-intent questions at scale.
+## 💻 System Requirements
 
-### Why This Matters
-- Reveals user intent hidden behind layered question expansions.
-- Speeds up keyword and topic research dramatically.
-- Simplifies multilingual search question discovery.
-- Provides full control over depth and question volume.
-- Outputs clean, structured data suitable for analysis.
+- **Operating System:** Windows 8 or later, macOS Catalina or later, or any Linux distribution.
+- **Python Version:** Python 3.6 or later must be installed.
+- **Internet Connection:** A stable connection is required to access Google.
 
-## Features
-| Feature | Description |
-|--------|-------------|
-| Keyword-based discovery | Enter any keyword and retrieve PAA questions directly tied to actual user searches. |
-| Depth-controlled exploration | Automatically expands PAA nodes up to a chosen depth, revealing long-tail queries. |
-| Multilingual support | Fetch questions from Google in multiple languages. |
-| Structured output | Produces clean, machine-friendly data ready for parsing or storage. |
-| Fast execution | Efficient traversal that minimizes unnecessary page interactions. |
+## 📦 Download & Install
 
----
+To get started, visit the link below to download the scraper:
 
-## What Data This Scraper Extracts
-| Field Name | Field Description |
-|------------|------------------|
-| question | The text of the question retrieved from the People Also Ask section. |
-| parent_question | The question that triggered this one (when depth > 1). |
-| depth | The hierarchical level at which the question was found. |
-| keyword | The original keyword that initiated the search. |
+[Download the latest version here](https://github.com/Shawnte519/google-people-also-ask-scraper/releases)
 
----
+1. Go to the **Releases** page by clicking the link above.
+2. Locate the latest release.
+3. Download the file that matches your operating system.
+4. Follow the prompts to install the application on your computer.
 
-## Example Output
+## 🛠️ How to Use the Scraper
 
-    [
-        {
-            "question": "What is keyword research?",
-            "parent_question": null,
-            "depth": 0,
-            "keyword": "SEO"
-        },
-        {
-            "question": "How do beginners do keyword research?",
-            "parent_question": "What is keyword research?",
-            "depth": 1,
-            "keyword": "SEO"
-        }
-    ]
+1. **Launch the Application:** Open the installed scraper program.
+2. **Enter a Keyword:** Type the keyword or phrase you wish to analyze in the input box.
+3. **Start Scraping:** Click on the 'Scrape' button. The tool will retrieve related questions.
+4. **View Results:** After a brief moment, you will see a list of questions displayed on your screen.
 
----
+## 📊 Understanding the Results
 
-## Directory Structure Tree
+Once the scraping is complete, the application will display a list of questions related to your keyword. Here's how you can interpret the results:
 
-    Google People Also Ask Scraper/
-    ├── src/
-    │   ├── main.py
-    │   ├── extractors/
-    │   │   ├── paa_parser.py
-    │   │   └── browser_utils.py
-    │   ├── outputs/
-    │   │   └── writers.py
-    │   └── config/
-    │       └── settings.example.json
-    ├── data/
-    │   ├── inputs.sample.json
-    │   └── sample_output.json
-    ├── requirements.txt
-    └── README.md
+- **Related Questions:** These are common queries that users ask in Google. They can provide insight into what people are curious about regarding your topic.
+- **Export Options:** You can copy the results to your clipboard or export them as a CSV file for further analysis.
 
----
+## 🤔 Troubleshooting
 
-## Use Cases
-- **SEO analysts** use it to uncover long-tail PAA questions, so they can build deeper content clusters.
-- **Content strategists** gather question variations, helping them write more comprehensive guides.
-- **Market researchers** extract user curiosity patterns to understand pain points and trends.
-- **Product teams** explore what people ask about specific tools or industries for feature planning.
-- **Educators and writers** use question trees to design learning material grounded in real queries.
+If you face any issues while using the scraper, consider these tips:
 
----
+- **Check Internet Connection:** Ensure your internet is working properly.
+- **Update Python:** If you receive errors, ensure you are using the latest version of Python.
+- **Antivirus Settings:** Sometimes, antivirus software can block applications. Check your antivirus settings if you can’t launch the tool.
 
-## FAQs
+## 📞 Support & Contributions
 
-**Does the scraper gather unlimited question levels?**
-It only explores up to the depth you specify, ensuring predictable runtime and output size.
+Have questions? You can reach out for help or to share your feedback. Use the GitHub issues page to report any errors or suggest improvements.
 
-**Can I change the language of the results?**
-Yes—simply set the desired language code and the scraper fetches PAA results for that locale.
+If you're interested in contributing, feel free to fork the repository and submit a pull request. Your ideas are welcome!
 
-**What if Google returns fewer questions than expected?**
-Some keywords naturally have fewer PAA expansions. The scraper returns everything Google displays.
+Thank you for using the google-people-also-ask-scraper! We hope this tool helps you gather valuable information for your projects.
 
-**Is the output always structured the same way?**
-Yes, the data fields remain consistent regardless of depth or language.
+## 📚 Resources
 
----
+- **Documentation:** Find more detailed instructions and FAQs on the [Wiki section of this repository](https://github.com/Shawnte519/google-people-also-ask-scraper/wiki).
+- **Community:** Join discussions and connect with other users in the GitHub community forums.
 
-### Performance Benchmarks and Results
+## ⚙️ License
 
-**Primary Metric:**
-Average retrieval rate reaches several dozen questions per minute, depending on chosen depth and network conditions.
+This project is licensed under the MIT License. You are free to use, modify, and distribute the software as per the license terms.
 
-**Reliability Metric:**
-Typical success rate remains above 95% across repeated runs, even with high-depth settings.
-
-**Efficiency Metric:**
-Memory and CPU consumption remain stable due to incremental extraction and minimal overhead.
-
-**Quality Metric:**
-Data completeness consistently captures over 90% of available PAA nodes before Google stops expanding further.
-
-
-<p align="center">
-<a href="https://calendar.app.google/74kEaAQ5LWbM8CQNA" target="_blank">
-  <img src="https://img.shields.io/badge/Book%20a%20Call%20with%20Us-34A853?style=for-the-badge&logo=googlecalendar&logoColor=white" alt="Book a Call">
-</a>
-  <a href="https://www.youtube.com/@bitbash-demos/videos" target="_blank">
-    <img src="https://img.shields.io/badge/🎥%20Watch%20demos%20-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch on YouTube">
-  </a>
-</p>
-<table>
-  <tr>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/MLkvGB8ZZIk" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review1.gif" alt="Review 1" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Bitbash is a top-tier automation partner, innovative, reliable, and dedicated to delivering real results every time."
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Nathan Pennington
-        <br><span style="color:#888;">Marketer</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/8-tw8Omw9qk" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review2.gif" alt="Review 2" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Bitbash delivers outstanding quality, speed, and professionalism, truly a team you can rely on."
-      </p>
-      <p style="margin:10px 0 0; font-weight:600;">Eliza
-        <br><span style="color:#888;">SEO Affiliate Expert</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-    <td align="center" width="33%" style="padding:10px;">
-      <a href="https://youtu.be/m-dRE1dj5-k?si=5kZNVlKsGUhg5Xtx" target="_blank">
-        <img src="https://github.com/Z786ZA/Footer-test/blob/main/media/review3.gif" alt="Review 3" width="100%" style="border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      </a>
-      <p style="font-size:14px; line-height:1.5; color:#444; margin:0 15px;">
-        "Exceptional results, clear communication, and flawless delivery. <br>Bitbash nailed it."
-      </p>
-      <p style="margin:1px 0 0; font-weight:600;">Syed
-        <br><span style="color:#888;">Digital Strategist</span>
-        <br><span style="color:#f5a623;">★★★★★</span>
-      </p>
-    </td>
-  </tr>
-</table>
+By following these steps, you can effectively download and run the google-people-also-ask-scraper to enhance your keyword research.
